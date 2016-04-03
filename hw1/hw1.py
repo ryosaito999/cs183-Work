@@ -15,9 +15,4 @@ if len(sys.argv) > 0:
 
 		#open file, read it and print it
 		file = open(i, 'r')
-		print "---------------------------------------------------------------------------------------------------------------------------------------------"
-		print i 
-		print file.read()
-
-else:
-	print "Must supply file(s)" 
+		sys.stdout.write(file.read())
